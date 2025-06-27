@@ -1,0 +1,73 @@
+/* Default Light Theme */
+body.light-theme {
+    --background-color: #f8f9fa;
+    --text-color: #212529;
+    --card-bg: #ffffff;
+    --card-header-bg: #e9ecef;
+    --card-header-text: #212529;
+    --card-footer-bg: #e9ecef;
+    --code-bg: #f5f5f5;
+    --code-text: #212529;
+    --copy-button-bg: #007bff;
+    --copy-button-text: #ffffff;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    --background-color: #343a40;
+    --text-color: #f8f9fa;
+    --card-bg: #495057;
+    --card-header-bg: #343a40;
+    --card-header-text: #f8f9fa;
+    --card-footer-bg: #343a40;
+    --code-bg: #212529;
+    --code-text: #f8f9fa;
+    --copy-button-bg: #6c757d;
+    --copy-button-text: #ffffff;
+}
+
+/* Apply theme variables */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-color: var(--card-header-bg);
+}
+
+.card-header {
+    background-color: var(--card-header-bg);
+    color: var(--card-header-text);
+    border-color: var(--card-header-bg);
+}
+
+.card-footer {
+    background-color: var(--card-footer-bg);
+    border-color: var(--card-header-bg);
+}
+
+.form-control {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-color: var(--card-header-bg);
+}
+
+.form-control:focus {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Adjust text alignment for chat messages */
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
